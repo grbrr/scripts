@@ -47,7 +47,7 @@ After=network.target
 
 [Service]
 User=pi
-ExecStart=/usr/bin/ssh reverse-tunnel
+ExecStart=/usr/bin/ssh -N -T reverse-tunnel
 Restart=always
 RestartSec=10
 Environment="DISPLAY=:0"
