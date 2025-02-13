@@ -107,3 +107,7 @@ Get let's encrypt cert
 autorefresh:
 
 `echo "0 3 * * * certbot renew --quiet" | sudo tee -a /etc/crontab`
+
+manual using txt record:
+
+`sudo certbot certonly --manual --preferred-challenges dns -d device.duckdns.org`
